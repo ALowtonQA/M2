@@ -1,0 +1,15 @@
+Run this file    demoPages/runMe.bat
+Keep the Command window open 
+
+This will start a server at http://localhost:50500/
+This site hosts all the demo html pages 
+
+The slides have changed to refer to this site instead of http://qa.somee.com/html/slides
+by selecting 	File > Info > "Show all properties" > "Hyperlink base"
+and type   	"http://localhost:50500/"
+
+
+There are no changes made to React Day 2.pptx and Course Introduction.pptx
+
+
+
