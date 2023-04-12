@@ -1,23 +1,11 @@
 import './App.css';
-import allBlogs from './blogData.json';
-import BlogList from './components/BlogList';
-import { useState } from 'react';
+import Blogs from './components/Blogs';
+
 
 function App() {
-
-  const [blogs, setBlogs] = useState(allBlogs);
-
-  function deleteBlog(id) {
-    const filtered = blogs.filter(item => item.id !== id);
-    setBlogs(filtered);
-  }
-
-  return ( 
-    <div>
-      <BlogList blogs={blogs} deleteBlog={deleteBlog}/>
-    </div>
+  return(
+    <Blogs/>
   );
-
 }
 
 export default App;
