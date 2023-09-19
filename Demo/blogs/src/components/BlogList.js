@@ -6,6 +6,7 @@ function BlogList(props) {
             <div>Title: {blog.title}</div>
             <div>Author: {blog.author}</div>
             <div>Body: {blog.body}</div>
+            <button onClick={()=> { props.deleteBlog(blog.id) }}>Delete</button>
           </div>
         )
       });
