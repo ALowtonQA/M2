@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "title": "Start coding in React",
+    "body": "Let us learn by example",
+    "dateCreated": "2019-05-04T15:00:00.000Z",
+    "author": "Mike"
+  },
+  {
+    "id": "2",
+    "title": "Create a new project",
+    "body": "This is how you can manage a major project",
+    "dateCreated": "2021-05-04T15:45:00.000Z",
+    "author": "Christopher"
+  },
+  {
+    "id": "3",
+    "title": "Banks",
+    "body": "This is how all banks work",
+    "dateCreated": "2019-08-04T15:45:00.000Z",
+    "author": "Jonathan"
+  },
+  {
+    "id": "4",
+    "title": "Healthy living",
+    "body": "How to live longer and gain better health",
+    "dateCreated": "2019-12-04T16:00:00.000Z",
+    "author": "Sasha"
+  },
+  {
+    "id": "5",
+    "title": "Food outlet",
+    "body": "How to create a new healthy food outlet with as little harm to the environment as possible",
+    "dateCreated": "2018-07-04T16:00:00.000Z",
+    "author": "Sean"
+  }
+]
