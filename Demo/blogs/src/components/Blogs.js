@@ -19,7 +19,7 @@ function Blogs() {
             }).then(data => {
                 setBlogs(data);
                 setError(null);
-                setisLoading(false);  
+                setisLoading(false); 
             }).catch(err => {
                 setError(err.message);
                 setisLoading(false);  
