@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Blogs from "./components/Blogs";
 import Navigation from "./components/Navigation";
 import NotFound from "./components/NotFound";
+import QAPics from "./components/QAPics";
 
 function App() {
   
@@ -10,8 +11,8 @@ function App() {
       <Navigation/>
       <Routes>
         <Route path='/' element={<Blogs />} />
-        {/* <Route path="/new-blog" element={<NewBlog />} />
-        <Route path="/qa/pics/:id" element={<QAPics />} /> */}
+        {/* <Route path="/new-blog" element={<NewBlog />} /> */}
+        <Route path="/qa/pics/:id" element={<QAPics />} />
         <Route path="*" element={<NotFound />} />
 		  </Routes>
     </>
