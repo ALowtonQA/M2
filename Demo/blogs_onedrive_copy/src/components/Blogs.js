@@ -1,11 +1,8 @@
 import BlogList from "../components/BlogList.js";
 import { useState, useEffect } from "react";
-import Spinner from "./Spinner.js";
 
 function Blogs() {
     const [blogs, setBlogs] = useState(null);
-    const [error, setError] = useState(null);
-    const [isLoading, setisLoading] = useState(true);
 
     useEffect(() => {
         fetch('http://localhost:4000/blogs')
@@ -13,9 +10,7 @@ function Blogs() {
                 return res.json();
             }).then(data => {
                 setBlogs(data);
-                setError(null);
-                setisLoading(false);  
-            }).catch();
+            });
     }, []);
 
   function deleteBlog(id) {
@@ -25,8 +20,6 @@ function Blogs() {
 
   return (
     <>
-        {error && <div> {error} </div>}
-        {isLoading && <Spinner/>}
         {blogs && <BlogList blogs={blogs} deleteBlog={deleteBlog}/>}
     </>
   )
