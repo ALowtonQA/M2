@@ -27,7 +27,7 @@ function Blogs() {
     }, []);
 
   function deleteBlog(id) {
-    const newBlogs = blogs.filter(blog => blog.id != id);
+    const newBlogs = blogs.filter(blog => blog.id !== id);
     setBlogs(newBlogs);
   }
 
