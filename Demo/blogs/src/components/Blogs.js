@@ -10,12 +10,20 @@ function Blogs() {
     useEffect(() => {
         fetch('http://localhost:4000/blogs')
             .then(res => {
+
+                if (!res.ok) {
+                    throw new Error("Could not get data for that resource");
+                }
+
                 return res.json();
             }).then(data => {
                 setBlogs(data);
                 setError(null);
                 setisLoading(false);  
-            }).catch();
+            }).catch(err => {
+                setError(err.message);
+                setisLoading(false);  
+            });
     }, []);
 
   function deleteBlog(id) {
